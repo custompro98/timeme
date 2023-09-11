@@ -4,7 +4,9 @@ import Button from "../components/button";
 const root = () => {
   return (
     <div>
-      <Button buttonProps={{ "hx-on": "click: alert('hello')"}}>Say hello</Button>
+      <Button buttonProps={{ "hx-on": "click: alert('hello')" }}>
+        Say hello
+      </Button>
     </div>
   );
 };
