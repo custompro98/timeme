@@ -1,11 +1,14 @@
-const layout = ({ title, children }: { title?: string; children: any }) => {
-  const normalizedTitle = title ? `timeme - ${title}` : "timeme";
+import head from "./head";
 
+interface Props {
+  title: string;
+  children: any;
+}
+
+const layout = ({ title, children }: Props) => {
   return (
     <html>
-      <head>
-        <title>{normalizedTitle}</title>
-      </head>
+      {head({ title })}
       <body>{children}</body>
     </html>
   );

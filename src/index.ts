@@ -4,7 +4,7 @@ import root from "./pages/root";
 
 const app = new Elysia()
   .use(html)
-  .get("/", () => root.layout({ children: root.component() }))
+  .get("/", () => root.layout({ title: 'Home', children: root.component() }))
   .listen(3000);
 
 console.log(
