@@ -3,7 +3,9 @@ interface Props {
 }
 
 const headLayout = ({ title }: Props) => {
-  const normalizedTitle = title ? `timeme - ${title}` : "timeme";
+  const normalizedTitle = title
+    ? `beth-stack-starter - ${title}`
+    : "beth-stack-starter";
 
   return (
     <head>
