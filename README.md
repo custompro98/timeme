@@ -1,6 +1,6 @@
-# BETH Stack Starter
+# timeme
 
-A starter template for getting going with the [BETH Stack](https://youtu.be/aDYYn9R-JyE?si=5byswX3GxXbGz3Ur)
+A tool to help keep time, tagged by tag and/or project.
 
 ## Components
 
