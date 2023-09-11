@@ -1,10 +1,14 @@
 import layout from "../layouts/main";
 
 const root = () => {
-  return <span>Hello Elysia</span>;
+  return (
+    <div>
+      <button hx-on="click: alert('hello')">Say hello</button>
+    </div>
+  );
 };
 
 export default {
   component: root,
-  layout: layout
-}
+  layout: layout,
+};
