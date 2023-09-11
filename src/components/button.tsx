@@ -1,5 +1,5 @@
 interface Props {
-  buttonProps: Record<string, any>;
+  buttonProps?: Record<string, any>;
   children?: any;
 }
 
