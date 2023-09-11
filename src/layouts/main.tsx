@@ -1,4 +1,4 @@
-import head from "./head";
+import Head from "./head";
 
 interface Props {
   title: string;
@@ -8,7 +8,7 @@ interface Props {
 const layout = ({ title, children }: Props) => {
   return (
     <html>
-      {head({ title })}
+      <Head title={title} />
       <body>{children}</body>
     </html>
   );

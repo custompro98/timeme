@@ -2,7 +2,7 @@ interface Props {
   title: string;
 }
 
-const headLayout = ({ title }: Props) => {
+const Head = ({ title }: Props) => {
   const normalizedTitle = title
     ? `beth-stack-starter - ${title}`
     : "beth-stack-starter";
@@ -15,4 +15,4 @@ const headLayout = ({ title }: Props) => {
   );
 };
 
-export default headLayout;
+export default Head;
