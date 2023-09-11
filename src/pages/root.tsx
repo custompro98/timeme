@@ -1,9 +1,10 @@
 import layout from "../layouts/main";
+import Button from "../components/button";
 
 const root = () => {
   return (
     <div>
-      <button hx-on="click: alert('hello')">Say hello</button>
+      <Button buttonProps={{ "hx-on": "click: alert('hello')"}}>Say hello</Button>
     </div>
   );
 };
