@@ -1,9 +1,13 @@
 import { Elysia } from "elysia";
-import { db } from "./database";
+import html from "@elysiajs/html";
 
-const app = new Elysia().get("/", () => "Hello Elysia").listen(3000);
+const app = new Elysia()
+  .use(html)
+  .get("/", async ({ html }) =>
+    html(await Bun.file("src/pages/root.tsx").text())
+  );
 
-db;
+app.listen(3000);
 
 console.log(
   `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
