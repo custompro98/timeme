@@ -4,8 +4,8 @@ interface Props {
 
 const Head = ({ title }: Props) => {
   const normalizedTitle = title
-    ? `beth-stack-starter - ${title}`
-    : "beth-stack-starter";
+    ? `timeme - ${title}`
+    : "timeme";
 
   return (
     <head>
